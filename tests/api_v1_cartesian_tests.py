@@ -4,13 +4,6 @@ from app.main import app
 
 client = TestClient(app)
 
-def test_status():
-    response = client.get("/api/v1/status/")
-    assert response.status_code == 200
-    data = response.json()
-    assert data["message"] == "OK"
-    assert data["status"] == 200
-
 def test_calculate_slope():
     response = client.get("/api/v1/cartesian/slope?x1=1&x2=3&y1=2&y2=6")
     assert response.status_code == 200

@@ -52,6 +52,13 @@ npm install
 npm run dev
 ```
 
+## Testing
+To perform the unit tests:
+```shell
+source 0_setup.py
+pytest tests/*.py -v
+```
+
 ## License
 
 MIT
