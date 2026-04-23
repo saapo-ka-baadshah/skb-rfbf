@@ -11,7 +11,8 @@ A clean, scalable, easy spinup framework for quick project initialization with F
 
 ```
 .
-├── front/          # React frontend
+├── front/          # React frontend (Vite)
+├── front/app/      # React app (new)
 ├── scripts/        # Orchestration scripts
 ├── src/            # FastAPI backend
 ├── tests/          # Test files
