@@ -24,9 +24,19 @@ A clean, scalable, easy spinup framework for quick project initialization with F
 └── requirements.txt
 ```
 
-## Quick Start
+## Quick Start (Full Stack)
 
-### Backend
+```bash
+# One-time setup
+source 0_setup.sh
+
+# Start development servers
+./scripts/01_start_dev.sh
+```
+
+## Optional Modes
+
+### Backend Only
 
 ```bash
 cd src
@@ -34,24 +44,12 @@ pip install -r ../requirements.txt
 python -m uvicorn app.main:app --reload
 ```
 
-### Frontend
+### Frontend Only
 
 ```bash
-cd front
+cd front/app
 npm install
 npm run dev
-```
-
-### Setup (one-time)
-
-```bash
-source 0_setup.sh
-```
-
-### Full Stack Development
-
-```bash
-./scripts/01_start_dev.sh
 ```
 
 ## License
