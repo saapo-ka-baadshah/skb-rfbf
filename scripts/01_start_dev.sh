@@ -16,7 +16,7 @@ BE_SRC=$REPO_ROOT/src
 FE_SRC=$REPO_ROOT/front/app
 
 (cd $BE_SRC && uvicorn app.main:app --reload) &
-(cd $FE_SRC && npm run dev) &
+(cd $FE_SRC && npm install && npm run dev) &
 wait $!
 
 trap - SIGINT
